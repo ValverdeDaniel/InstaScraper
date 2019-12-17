@@ -3,7 +3,7 @@ const cheerio = require('cheerio');
 /* Create the base function to be ran */
 (async () => {
 
-  const igImgId = 'B6GOuCsAUkU';
+  const igImgId = 'B6DvVb0HkqY';
   const BASE_URL = `https://www.instagram.com/p/${igImgId}/`;
   /* Send the request and get the html content */
   let response = await request(BASE_URL);

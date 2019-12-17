@@ -19,9 +19,9 @@ const cheerio = require('cheerio');
   let script_regex =/window._sharedData = (.+);/g.exec(script);
 
   //let igData = JSON.parse(script);
-  let igData = JSON.parse(script_regex[1]);
+  //let igData = JSON.parse(script_regex[1]);
 
-  console.log(igData);
+  console.log(script);
 
   debugger;
 })()    /* Here you replace the username with your actual instagram username that you want to check */

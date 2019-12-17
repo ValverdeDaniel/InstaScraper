@@ -1,19 +1,21 @@
-//https://www.instagram.com/p/B58vxIyAzGd/
+const request = require('request-promise');
+const cheerio = require('cheerio');
 
-// "ProfilePage","@id":"https:\/\/www.instagram.com\/beyondsouthbeach\/"
-    // pl-scraper.js
+(async () => {
 
-    const axios = require('axios');
+  const BASE_URL = 'https://www.instagram.com/p/B6G1gislVyQ/';
+  const igProfilePattern = /rel="canonical"[\s]+href="https:\/\/www.instagram.com\/([^/]+)\//i
+  
+  let response = await request(BASE_URL);
+  //console.log(response)
+  /* Initiate Cheerio with the response */
+  let $ = cheerio.load(response);
 
-    const url = 'https://www.instagram.com/p/B6GOuCsAUkU/';
-    const igProfilePattern = /rel="canonical"[\s]+href="https:\/\/www.instagram.com\/([^/]+)\//i
+  let script = $('script[rel="canonical"]').eq(0).html();
+console.log=(script);
+debugger;
+  // console.log({ html })
+  //const profile = html.match(igProfilePattern)[1]
 
-    axios(url)
-      .then(response => {
-        const html = response.data;
-        //console.log(html);
-        console.log(igProfilePattern)
-        //console.log(url);
-        //console.log(meta)
-      })
-      .catch(console.error);
+  //console.log(profile)
+})()

@@ -5,13 +5,13 @@
 
     const axios = require('axios');
     //thenaughty fork
-    // const url = 'https://www.instagram.com/p/B6DvVb0HkqY/';
+    const url = 'https://www.instagram.com/p/B6G_44_nVrt/';
 //the tinychef show
    //const url = 'https://www.instagram.com/p/B52sqJzA6lS/';    
 
     
     //kylie jenner
-    const url = 'https://www.instagram.com/p/B6JLGIBne2P/';
+    //const url = 'https://www.instagram.com/p/B6JLGIBne2P/';
     //cobywhite
    // const url = 'https://www.instagram.com/p/B6G1gislVyQ/';
 

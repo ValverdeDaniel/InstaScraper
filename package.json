@@ -12,7 +12,8 @@
   "dependencies": {
     "axios": "^0.19.0",
     "cheerio": "^1.0.0-rc.3",
-    "puppeteer": "^2.0.0",
+    "domino": "^2.1.4",
+    "page-metadata-parser": "^1.1.4",
     "request": "^2.88.0",
     "request-promise": "^4.2.5"
   }

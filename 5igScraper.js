@@ -16,7 +16,7 @@ const cheerio = require('cheerio');
   
   let script = $('script[type="text/javascript"]').eq(3).html();
 
-  let script_regex =/window._sharedData = (.+);/g.exec(script);
+  //let script_regex =/window._sharedData = (.+);/g.exec(script);
 
   //let igData = JSON.parse(script);
   //let igData = JSON.parse(script_regex[1]);
